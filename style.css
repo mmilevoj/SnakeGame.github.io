@@ -88,6 +88,37 @@ button#start-btn {
   border-radius: 35% 35% 41% 41% / 42% 42% 75% 75%;
 }
 
+/* CREATING DIRECTIONAL BUTTONS FOR OUR SNAKE GAME */
+#btn-up {
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#btn-right {
+  width: 30%;
+  float: right;
+}
+#btn-left {
+  width: 30%;
+  float: left;
+}
+#btn-down {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.direct-btn {
+  display: block;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid rgb(158, 157, 157);
+  padding: 2em 0;
+}
+
 /* MEDIA QUERY!!!! */
 
 /* HORIZONTAL */

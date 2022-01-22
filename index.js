@@ -11,11 +11,32 @@ let score = 0;
 let intervalTime = 1000;
 let speed = 0.9;
 let timerId = 0;
+let moveSnakeUp = document.getElementById("btn-up")
+let moveSnakeRight = document.getElementById("btn-right")
+let moveSnakeDown = document.getElementById("btn-down")
+let moveSnakeLeft = document.getElementById("btn-left")
 
 //CREDIT: "SQUID GAME" THEME MUSIC SAMPLE FOR OUR GAME  
 window.onclick=function(){
     document.getElementById("my_audio").play();
   } ;
+
+  button.addEventListener('click', startGame)
+
+  // MAKING DIRECTIONAL BUTTONS FOR OUR GAME (MOBILE USE)
+moveSnakeUp.addEventListener('click', function () {
+  direction = -width;
+})
+moveSnakeDown.addEventListener('click', function () {
+  direction = +width;
+})
+moveSnakeLeft.addEventListener('click', function () {
+  direction = -1;
+})
+
+moveSnakeRight.addEventListener('click', function () {
+  direction = 1;
+})
   
 // CREATING OUR SNAKE
 
@@ -131,7 +152,7 @@ function gameOver(){
 }
 
 document.addEventListener('keyup',control);
-document.addEventListener('click', startGame);
+
 
 
 
