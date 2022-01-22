@@ -17,7 +17,7 @@ let moveSnakeDown = document.getElementById("btn-down")
 let moveSnakeLeft = document.getElementById("btn-left")
 
 //CREDIT: "SQUID GAME" THEME MUSIC SAMPLE FOR OUR GAME  
-button.onclick=function(){
+window.onclick=function(){
     document.getElementById("my_audio").play();
   } ;
 
